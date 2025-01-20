@@ -7,6 +7,7 @@
   padding: 0;
 }
 
+/* HEADER */
 header {
   font-family: Quicksand;
   max-width: 1160px;
@@ -29,6 +30,7 @@ nav {
 .logo h1 {
   color: rgb(17, 17, 17);
   font-family: Quicksand;
+  text-transform: uppercase;
   font-size: 2rem;
   font-weight: 700;
 }
@@ -70,6 +72,7 @@ nav button {
   color: #fff;
   font-family: Quicksand;
   font-size: 1.25rem;
+  font-weight: 600;
   padding: 10px 50px;
 }
 
@@ -82,9 +85,57 @@ hr {
   border: 1px solid rgb(254, 163, 1);
 }
 
+/* BANNER */
+
+.banner {
+  max-width: 1160px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-title h1 {
+  font-family: Quicksand;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 61px;
+  padding-bottom: 24px;
+}
+
+.banner-title-color-1 {
+  color: rgb(254, 163, 1);
+}
+
+.banner-title-color-2 {
+  color: rgb(1, 172, 253);
+}
+
+.banner-title p {
+  color: rgb(17, 17, 17);
+  font-family: Quicksand;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 25px;
+  padding-bottom: 24px;
+  padding-right: 10%;
+}
+
+.banner-title button {
+  border: none;
+  border-radius: 12px;
+  background: rgb(17, 17, 17);
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 10px 50px;
+}
+
 /* RESPONSIVE: MOBILE DEVICE */
 
 @media screen and (max-width: 576px) {
+  /* HEADER */
   header {
     padding: 0px 16px;
   }
@@ -107,5 +158,24 @@ hr {
 
   hr {
     display: block;
+  }
+
+  /* BANNER */
+  .banner {
+    flex-direction: column-reverse;
+    margin-top: 50px;
+  }
+
+  .banner-img img {
+    width: 100%;
+  }
+
+  .banner-title {
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .banner-title p {
+    padding-right: 0%;
   }
 }
