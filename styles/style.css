@@ -307,7 +307,8 @@ main {
   /* STANDARD CARDS */
   .standard-cards {
     grid-template-columns: repeat(1, 1fr);
-    margin: 0px 7%;
+    justify-self: center;
+    align-self: center;
   }
 
   .standard-btn {
