@@ -1,4 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+}
+
+header {
+  font-family: Quicksand;
+  max-width: 1160px;
+  margin: 20px auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo h1 {
+  color: rgb(17, 17, 17);
+  font-family: Quicksand;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+#li-1 {
+  color: rgb(254, 163, 1);
+  font-weight: 700;
+}
+
+#li-2 {
+  color: rgb(1, 172, 253);
+}
+
+#li-3 {
+  color: rgb(5, 212, 223);
+}
+
+#li-4 {
+  color: rgb(93, 88, 239);
+}
+
+nav button {
+  border: none;
+  border-radius: 12px;
+  background: rgb(254, 163, 1);
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 1.25rem;
+  padding: 10px 50px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+hr {
+  display: none;
+  border: 1px solid rgb(254, 163, 1);
+}
+
+/* RESPONSIVE: MOBILE DEVICE */
+
+@media screen and (max-width: 576px) {
+  header {
+    padding: 0px 16px;
+  }
+
+  .logo h1 {
+    display: none;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  hr {
+    display: block;
+  }
 }
