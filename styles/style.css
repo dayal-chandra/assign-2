@@ -132,6 +132,131 @@ hr {
   padding: 10px 50px;
 }
 
+/* MAIN */
+
+main {
+  background-image: url("../images/bg.png");
+  background-size: cover;
+}
+/* STANDARD CURRICULUM */
+
+.standard-curriculm {
+  max-width: 1160px;
+  margin: 0px auto 80px;
+  text-align: center;
+}
+
+.standard-curriculm h1 {
+  color: rgb(0, 0, 0);
+  font-family: Quicksand;
+  font-size: 2.8rem;
+  font-weight: 700;
+  padding: 60px 0px 80px;
+}
+
+.standard-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 80px;
+}
+
+.standard-card {
+  width: 290px;
+  height: 450px;
+  padding: 5% 40px 0px;
+  position: relative;
+}
+
+#standard-card-1 {
+  border: 1px solid rgb(222, 245, 255);
+  border-radius: 19px;
+  box-shadow: inset 0px 0px 28px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(222, 245, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+
+#standard-card-2 {
+  border: 0.94px solid rgb(255, 244, 220);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(255, 244, 220),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+
+#standard-card-3 {
+  border: 0.94px solid rgb(242, 232, 255);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(238, 225, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+}
+
+#standard-card-2 img {
+  margin-bottom: 12px;
+}
+
+.standard-card h3 {
+  color: rgb(32, 32, 32);
+  font-family: Quicksand;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 32px 0px;
+}
+
+.standard-card p {
+  color: rgb(128, 128, 128);
+  font-family: Raleway;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 29px;
+}
+
+.standard-card button {
+  border: none;
+  background-color: #fff;
+  font-family: Quicksand;
+  font-size: 1rem;
+  font-weight: 700;
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  bottom: 30px;
+}
+
+#standard-card-btn-1 {
+  color: rgb(100, 200, 255);
+}
+
+#standard-card-btn-2 {
+  color: rgb(240, 170, 0);
+}
+
+#standard-card-btn-3 {
+  color: rgb(135, 0, 255);
+}
+
+.standard-btn button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(254, 163, 1);
+  color: #fff;
+}
+
 /* RESPONSIVE: MOBILE DEVICE */
 
 @media screen and (max-width: 576px) {
@@ -177,5 +302,15 @@ hr {
 
   .banner-title p {
     padding-right: 0%;
+  }
+
+  /* STANDARD CARDS */
+  .standard-cards {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0px 7%;
+  }
+
+  .standard-btn {
+    display: none;
   }
 }
