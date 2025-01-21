@@ -80,11 +80,6 @@ nav button {
   display: none;
 }
 
-hr {
-  display: none;
-  border: 1px solid rgb(254, 163, 1);
-}
-
 /* BANNER */
 
 .banner {
@@ -503,7 +498,9 @@ footer {
 @media screen and (max-width: 576px) {
   /* HEADER */
   header {
-    padding: 0px 16px;
+    padding: 10px 16px 0px;
+    border: 2px solid rgb(254, 163, 1);
+    margin-top: 0px;
   }
 
   .logo h1 {
