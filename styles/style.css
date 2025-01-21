@@ -476,6 +476,18 @@ footer {
   font-weight: 700;
   margin-bottom: 20px;
 }
+
+/* MARQUE TAG */
+.sliding-text {
+  height: 30px;
+  background-color: yellow;
+  color: #000;
+  font-family: Quicksand;
+  font-weight: 700;
+  position: ;
+  bottom: 0px;
+}
+
 /* RESPONSIVE: MOBILE DEVICE */
 
 @media screen and (max-width: 576px) {
