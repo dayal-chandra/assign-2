@@ -237,16 +237,19 @@ main {
   bottom: 30px;
 }
 
-#standard-card-btn-1 {
+#standard-card-btn-1 a {
   color: rgb(100, 200, 255);
+  text-decoration: none;
 }
 
-#standard-card-btn-2 {
+#standard-card-btn-2 a {
   color: rgb(240, 170, 0);
+  text-decoration: none;
 }
 
-#standard-card-btn-3 {
+#standard-card-btn-3 a {
   color: rgb(135, 0, 255);
+  text-decoration: none;
 }
 
 .standard-btn button {
@@ -256,6 +259,12 @@ main {
   border-radius: 50%;
   background-color: rgb(254, 163, 1);
   color: #fff;
+  transition: 0.3s ease-in-out;
+}
+
+.standard-btn button:hover {
+  background-color: rgb(31, 141, 232);
+  transform: scale(1.1);
 }
 
 /* OUR STORIES */
@@ -397,6 +406,7 @@ main {
 .stories-btn button {
   border: none;
   border-radius: 12px;
+  font-size: 1.25rem;
   background: rgb(17, 17, 17);
   color: #fff;
   padding: 10px 50px;
