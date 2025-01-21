@@ -257,6 +257,80 @@ main {
   color: #fff;
 }
 
+/* FOOTER */
+
+footer {
+  background-color: rgb(1, 172, 253);
+}
+
+.footer-section {
+  max-width: 1160px;
+  margin: auto;
+  padding: 125px 0px 170px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title {
+  width: 50%;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo h2 {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
+.footer-title p {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 25px;
+  padding: 35px 20% 0px 0px;
+}
+
+.footer-about h3 {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-about ul {
+  list-style: none;
+}
+
+.footer-about li {
+  margin-bottom: 20px;
+}
+
+.footer-about a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.footer-social {
+  padding-right: 80px;
+}
+
+.footer-social h3 {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 /* RESPONSIVE: MOBILE DEVICE */
 
 @media screen and (max-width: 576px) {
@@ -313,5 +387,25 @@ main {
 
   .standard-btn {
     display: none;
+  }
+
+  /* FOOTER */
+
+  .footer-section {
+    flex-direction: column;
+    padding: 10%;
+  }
+
+  .footer-title {
+    width: 100%;
+  }
+
+  .footer-title p {
+    padding-right: 0px;
+    padding-bottom: 50px;
+  }
+
+  .footer-social {
+    padding-top: 45px;
   }
 }
